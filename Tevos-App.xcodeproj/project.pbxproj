@@ -11,6 +11,13 @@
 		792B78432A07FC340010789E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B78422A07FC340010789E /* ContentView.swift */; };
 		792B78452A07FC360010789E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792B78442A07FC360010789E /* Assets.xcassets */; };
 		792B78482A07FC360010789E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792B78472A07FC360010789E /* Preview Assets.xcassets */; };
+		792B78522A07FDA00010789E /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B78512A07FDA00010789E /* HomeView.swift */; };
+		792B78542A07FDF30010789E /* LikesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B78532A07FDF30010789E /* LikesView.swift */; };
+		792B78562A07FE0E0010789E /* Catalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B78552A07FE0E0010789E /* Catalog.swift */; };
+		792B78582A08C4CD0010789E /* OutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B78572A08C4CD0010789E /* OutView.swift */; };
+		792B785A2A08C9810010789E /* BasketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B78592A08C9810010789E /* BasketView.swift */; };
+		792B785D2A08CC370010789E /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B785C2A08CC370010789E /* CardModel.swift */; };
+		792B78602A08E5ED0010789E /* ViewModelStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792B785F2A08E5ED0010789E /* ViewModelStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		792B78422A07FC340010789E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		792B78442A07FC360010789E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		792B78472A07FC360010789E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		792B78512A07FDA00010789E /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		792B78532A07FDF30010789E /* LikesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesView.swift; sourceTree = "<group>"; };
+		792B78552A07FE0E0010789E /* Catalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Catalog.swift; sourceTree = "<group>"; };
+		792B78572A08C4CD0010789E /* OutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutView.swift; sourceTree = "<group>"; };
+		792B78592A08C9810010789E /* BasketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasketView.swift; sourceTree = "<group>"; };
+		792B785C2A08CC370010789E /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		792B785F2A08E5ED0010789E /* ViewModelStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,9 @@
 		792B783F2A07FC340010789E /* Tevos-App */ = {
 			isa = PBXGroup;
 			children = (
+				792B785E2A08E5B90010789E /* ViewModel */,
+				792B785B2A08CC130010789E /* Model */,
+				792B784E2A07FD2C0010789E /* View */,
 				792B78402A07FC340010789E /* Tevos_AppApp.swift */,
 				792B78422A07FC340010789E /* ContentView.swift */,
 				792B78442A07FC360010789E /* Assets.xcassets */,
@@ -65,6 +82,34 @@
 				792B78472A07FC360010789E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		792B784E2A07FD2C0010789E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				792B78512A07FDA00010789E /* HomeView.swift */,
+				792B78532A07FDF30010789E /* LikesView.swift */,
+				792B78552A07FE0E0010789E /* Catalog.swift */,
+				792B78572A08C4CD0010789E /* OutView.swift */,
+				792B78592A08C9810010789E /* BasketView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		792B785B2A08CC130010789E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				792B785C2A08CC370010789E /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		792B785E2A08E5B90010789E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				792B785F2A08E5ED0010789E /* ViewModelStore.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				792B78522A07FDA00010789E /* HomeView.swift in Sources */,
+				792B78582A08C4CD0010789E /* OutView.swift in Sources */,
 				792B78432A07FC340010789E /* ContentView.swift in Sources */,
+				792B78542A07FDF30010789E /* LikesView.swift in Sources */,
 				792B78412A07FC340010789E /* Tevos_AppApp.swift in Sources */,
+				792B785D2A08CC370010789E /* CardModel.swift in Sources */,
+				792B785A2A08C9810010789E /* BasketView.swift in Sources */,
+				792B78602A08E5ED0010789E /* ViewModelStore.swift in Sources */,
+				792B78562A07FE0E0010789E /* Catalog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
